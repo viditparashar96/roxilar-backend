@@ -19,7 +19,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://roxiler-frontend-52q1.vercel.app/",
+        url: "https://roxilar-backend.onrender.com/",
       },
     ],
   },
