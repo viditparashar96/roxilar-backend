@@ -39,7 +39,9 @@ const start = (): void => {
         `⚡️[server]: Server is running at ${
           env_conf.node_env == "dev" ? `http://localhost:${port}` : port
         } \n📄[docs]: ${
-          env_conf.node_env == "dev" ? `http://localhost:${port}/api-docs` : ""
+          env_conf.node_env == "dev"
+            ? `http://localhost:${port}/api-docs`
+            : "https://roxilar-backend.onrender.com/api-docs"
         }`
       );
     });
