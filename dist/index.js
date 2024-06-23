@@ -25,8 +25,7 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use(express_1.default.json());
 app.use(cors({
-    origin: ["https://roxiler-frontend-52q1.vercel.app/", "*"],
-    credentials: true,
+    origin: "https://roxiler-frontend-wtc5.vercel.app/",
 }));
 app.use((0, morgan_1.default)("dev"));
 app.use(cookieParser());
@@ -39,7 +38,9 @@ const start = () => {
     try {
         (0, db_config_1.connect_db)();
         app.listen(port, () => {
-            console.log(`⚡️[server]: Server is running at ${env_config_1.env_conf.node_env == "dev" ? `http://localhost:${port}` : port} \n📄[docs]: ${env_config_1.env_conf.node_env == "dev" ? `http://localhost:${port}/api-docs` : ""}`);
+            console.log(`⚡️[server]: Server is running at ${env_config_1.env_conf.node_env == "dev" ? `http://localhost:${port}` : port} \n📄[docs]: ${env_config_1.env_conf.node_env == "dev"
+                ? `http://localhost:${port}/api-docs`
+                : "https://roxilar-backend.onrender.com/api-docs"}`);
         });
     }
     catch (error) {
