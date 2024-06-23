@@ -16,7 +16,7 @@ import {
 const baseUrl =
   env_conf.node_env === "dev"
     ? `http://localhost:${process.env.PORT}/api/v1/transaction`
-    : ""; // Adjust the base URL if needed
+    : ""; 
 
 export const getTransactions = async (req: Request, res: Response) => {
   try {
