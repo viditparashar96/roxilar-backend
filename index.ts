@@ -10,11 +10,7 @@ const transaction_route = require("./routes/transaction-route");
 const app: Express = express();
 const port = process.env.PORT;
 app.use(express.json());
-app.use(
-  cors({
-    origin: "https://roxiler-frontend-wtc5.vercel.app/",
-  })
-);
+app.use(cors());
 app.use(logger("dev"));
 
 app.use(cookieParser());
