@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://roxiler-frontend-wtc5.vercel.app",
+    credentials: true,
   })
 );
 app.use(logger("dev"));
