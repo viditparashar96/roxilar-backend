@@ -12,7 +12,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://roxiler-frontend-wtc5.vercel.app/",
+    origin: "https://roxiler-frontend-wtc5.vercel.app",
   })
 );
 app.use(logger("dev"));

@@ -25,7 +25,7 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use(express_1.default.json());
 app.use(cors({
-    origin: "https://roxiler-frontend-wtc5.vercel.app/",
+    origin: "https://roxiler-frontend-wtc5.vercel.app",
 }));
 app.use((0, morgan_1.default)("dev"));
 app.use(cookieParser());
